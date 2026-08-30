@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+@theme {
+    --color-accent: #c2a4ff;
+    --color-canvas: #0b080c;
+    --color-soft: #eae5ec;
+    --backgroundColor: #0b080c;
+}
+
+@theme {
+    --font-geist: "Geist", sans-serif;
+}
+
 @font-face {
     font-family: 'Geist';
     font-style: normal;
