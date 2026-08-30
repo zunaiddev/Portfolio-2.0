@@ -1,18 +1,18 @@
-import {createBrowserRouter, Outlet} from "react-router";
+import {createBrowserRouter} from "react-router";
+import HomeLayout from "../layout/HomeLayout.tsx";
 import Home from "../pages/Home.tsx";
-import Skills from "../components/Skills.tsx";
+import TeckStack from "../components/TeckStack.tsx";
 
 const Routes = createBrowserRouter([
     {
-        path: "/", element: <div className="w-full min-h-screen overflow-y-auto bg-[#0B080C]">
-            <Outlet/>
-        </div>,
+        path: "/",
+        element: <HomeLayout/>,
         children: [{
             path: "/",
             element: <Home/>
         }, {
             path: "/skills",
-            element: <Skills/>
+            element: <TeckStack/>
         }]
     }
 

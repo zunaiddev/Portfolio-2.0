@@ -1,10 +1,25 @@
 import type {JSX} from "react";
-import IntroBar from "./IntroBar.tsx";
+import {NAME} from "../constants/constants.ts";
 
 function LandingPage(): JSX.Element {
     return (
-        <div className="relative min-h-lvh w-full h-full flex flex-col pt-30 items-center">
-            <IntroBar/>
+        <div className="relative w-full h-full flex justify-between items-center px-4">
+            <div className="text-start">
+                <h2 className="text-accent font-geist mt-1 text-[25px]">Hello! I'm</h2>
+                <h1 className="font-geist uppercase text-soft font-medium -mt-4 text-[40px]">{NAME}</h1>
+            </div>
+
+            <div className="text-start mt-10">
+                <h2 className="text-accent font-geist mt-1 text-[25px]">An</h2>
+                <div>
+                    <h2 className="text-accent uppercase font-geist relative font-semibold text-[45px] tracking-[2px] spacing after:content-[''] after:absolute after:top-1 after:left-0 after:z-3 after:w-full after:h-[90%] after:bg-[linear-gradient(0deg,var(--backgroundColor)_40%,rgba(0,0,0,0)_110%)] leading-9">
+                        Software Engineer
+                    </h2>
+                    <h2 className="text-soft ml-5 font-geist relative font-semibold text-[45px] tracking-[2px] leading-13 -mt-1">
+                        FULL STACK DEVELOPER
+                    </h2>
+                </div>
+            </div>
             {/*<Avatar/>*/}
             {/*<AskMeInput/>*/}
 
@@ -14,7 +29,6 @@ function LandingPage(): JSX.Element {
             {/*</div>*/}
         </div>
     );
-
 }
 
 export default LandingPage;
