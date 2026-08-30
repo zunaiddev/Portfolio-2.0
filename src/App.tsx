@@ -1,7 +1,8 @@
-import Skills from "./components/Skills.tsx";
+import {RouterProvider} from "react-router";
+import Routes from "./routes/Routes.tsx";
 
 function App() {
-    return <Skills/>
+    return <RouterProvider router={Routes}/>
 }
 
 export default App;
