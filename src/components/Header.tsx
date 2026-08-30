@@ -1,9 +1,5 @@
 import type {JSX} from "react";
 
-interface Props {
-
-}
-
 function Header(): JSX.Element {
     return (<header>
         <h1>ZU</h1>
