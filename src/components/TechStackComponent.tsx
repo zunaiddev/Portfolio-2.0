@@ -1,6 +1,6 @@
 import type {JSX} from "react";
-import {techStack} from "../constants/techstack.ts";
 import Skill from "./Skill.tsx";
+import {techStack} from "../constants/techstack.ts";
 
 function TechStackComponent(): JSX.Element {
     return (<div className="flex flex-col items-center gap-3">
