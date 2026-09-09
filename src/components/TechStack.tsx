@@ -1,16 +1,17 @@
 import type {JSX} from "react";
-import {techStack} from "../constants/techstack.ts";
-import Skill from "./Skill.tsx";
+import SkillsBackground from "./SkillsBackground.tsx";
+import TechStackComponent from "./TechStackComponent.tsx";
 
 function TechStack(): JSX.Element {
-    return (<div className="flex flex-col items-center gap-3">
-        {techStack.map((row, rowIndex) => (
-            <div key={rowIndex} className="flex justify-center gap-2.5 flex-wrap">
-                {row.map((tech, techIndex) => <Skill key={techIndex} name={tech.name} icon={tech.icon}
-                                                     url={tech.url}/>)}
-            </div>
-        ))}
-    </div>);
+    return (<section
+        className="relative w-full min-h-screen py-80 overflow-hidden flex justify-center items-center texhstack-video-blend">
+        <SkillsBackground/>
+        <div className="relative w-full max-h-250 px-5 z-2">
+            <h1 className="text-7xl font-normal mb-15 bg-linear-to-b from-[#ffffff] to-accent bg-clip-text text-transparent z-1 text-center ">TECH
+                STACK</h1>
+            <TechStackComponent/>
+        </div>
+    </section>);
 }
 
 export default TechStack;

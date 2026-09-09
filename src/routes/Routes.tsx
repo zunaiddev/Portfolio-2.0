@@ -1,7 +1,7 @@
 import {createBrowserRouter} from "react-router";
 import HomeLayout from "../layout/HomeLayout.tsx";
 import Home from "../pages/Home.tsx";
-import TeckStack from "../components/TeckStack.tsx";
+import TechStack from "../components/TechStack.tsx";
 
 const Routes = createBrowserRouter([
     {
@@ -12,7 +12,7 @@ const Routes = createBrowserRouter([
             element: <Home/>
         }, {
             path: "/skills",
-            element: <TeckStack/>
+            element: <TechStack/>
         }]
     }
 

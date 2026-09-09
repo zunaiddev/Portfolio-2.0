@@ -1,11 +1,15 @@
 import type {JSX} from "react";
 import LandingPage from "../components/LandingPage.tsx";
-import TeckStack from "../components/TeckStack.tsx";
+import TechStack from "../components/TechStack.tsx";
+import Experience from "../components/Experience.tsx";
+import SocialLinks from "../components/SocialLinks.tsx";
 
 function Home(): JSX.Element {
-    return (<main className="w-full h-full bg-canvas">
+    return (<main className="w-full min-h-full bg-canvas">
         <LandingPage/>
-        <TeckStack/>
+        <Experience/>
+        <TechStack/>
+        <SocialLinks/>
     </main>);
 }
 
