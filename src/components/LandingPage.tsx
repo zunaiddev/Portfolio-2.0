@@ -3,7 +3,7 @@ import {NAME} from "../constants/constants.ts";
 
 function LandingPage(): JSX.Element {
     return (
-        <div className="relative w-full h-full flex justify-between items-center px-4">
+        <div className="relative w-full min-h-screen flex justify-between items-center px-4">
             <div className="text-start">
                 <h2 className="text-accent font-geist mt-1 text-[25px]">Hello! I'm</h2>
                 <h1 className="font-geist uppercase text-soft font-medium -mt-4 text-[40px]">{NAME}</h1>
