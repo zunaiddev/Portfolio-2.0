@@ -77,13 +77,6 @@ function Experience(): JSX.Element {
 
             {/* Section Header */}
             <div className="relative z-10 flex flex-col items-center text-center mb-20">
-                <div
-                    className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-4">
-                    <span className="w-2 h-2 rounded-full bg-accent animate-pulse"/>
-                    <span className="text-xs uppercase tracking-widest text-accent font-semibold">
-                        Career Timeline
-                    </span>
-                </div>
                 <h2 className="text-5xl sm:text-7xl font-normal tracking-tight bg-linear-to-b from-white via-white/90 to-accent bg-clip-text text-transparent">
                     EXPERIENCE
                 </h2>
@@ -92,7 +85,6 @@ function Experience(): JSX.Element {
                 </p>
             </div>
 
-            {/* Timeline Container */}
             <div className="relative z-10">
                 {/* Vertical Central / Left Line */}
                 <div
@@ -100,7 +92,8 @@ function Experience(): JSX.Element {
 
                 <div className="space-y-12">
                     {EXPERIENCES.map((exp, index) => {
-                        const isEven = index % 2 === 0;
+                        // const isEven = index % 2 === 0;
+                        const isEven = true;
 
                         return (
                             <div
