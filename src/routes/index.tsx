@@ -1,21 +1,21 @@
 import {createBrowserRouter} from "react-router";
-import HomeLayout from "../layout/HomeLayout.tsx";
-import Home from "../pages/Home.tsx";
+import RootLayout from "../layout/RootLayout.tsx";
 import TechStack from "../components/TechStack.tsx";
+import Home from "../pages/Home.tsx";
 
-const Routes = createBrowserRouter([
+const routes = createBrowserRouter([
     {
         path: "/",
-        element: <HomeLayout/>,
+        element: <RootLayout/>,
         children: [{
-            path: "/",
+            index: true,
             element: <Home/>
-        }, {
+        },
+            {
             path: "/skills",
             element: <TechStack/>
         }]
     }
-
 ]);
 
-export default Routes;
+export default routes;

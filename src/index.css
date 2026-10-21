@@ -5,6 +5,29 @@
     --color-canvas: #0b080c;
     --color-soft: #eae5ec;
     --backgroundColor: #0b080c;
+    --color-header-background: #f7f7f8;
+    --color-header-border: #e2e3e6;
+    --color-header-nav-border: #d6d8dd;
+    --color-header-logo: #202b3c;
+    --color-header-link: #687080;
+    --color-header-link-hover: #171a20;
+    --color-header-social-background: #393a3e;
+    --color-home-background: var(--color-header-background);
+    --color-home-ink: #20232b;
+    --color-home-muted: #6f7480;
+    --color-home-line: var(--color-header-border);
+    --color-home-accent: #8055d8;
+    --color-home-accent-soft: #eee8fa;
+    --color-home-dark: #24242a;
+    --color-about-accent: #5548b8;
+    --color-about-surface: #fbfbfc;
+    --color-about-border: var(--color-header-nav-border);
+    --color-footer-accent: #c5a8ff;
+}
+
+.bg-dark-primary {
+    --tw-bg-opacity: 1;
+    background-color: rgb(60 60 63/var(--tw-bg-opacity));
 }
 
 @theme {
