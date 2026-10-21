@@ -1,8 +1,6 @@
 import type {TechStackItem} from "../types/TechStackItem.ts";
 
-export const techStack: TechStackItem[][] = [
-    // Row 1 - 12 items (largest)
-    [
+export const techStack: TechStackItem[] = [
         {
             name: "Python",
             icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
@@ -63,9 +61,6 @@ export const techStack: TechStackItem[][] = [
             icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
             url: "https://getbootstrap.com"
         },
-    ],
-    // Row 2 - 10 items
-    [
         {
             name: "Node.js",
             icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
@@ -116,10 +111,7 @@ export const techStack: TechStackItem[][] = [
             icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
             url: "https://tailwindcss.com"
         },
-    ],
-    // Row 3 - 8 items
-    [
-        {
+     {
             name: "Pandas",
             icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg",
             url: "https://pandas.pydata.org"
@@ -159,9 +151,6 @@ export const techStack: TechStackItem[][] = [
             icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg",
             url: "https://azure.microsoft.com"
         },
-    ],
-    // Row 4 - 6 items
-    [
         {
             name: "Git",
             icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
@@ -192,9 +181,6 @@ export const techStack: TechStackItem[][] = [
             icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg",
             url: "https://vercel.com"
         },
-    ],
-    // Row 5 - 4 items
-    [
         {
             name: "Jupyter",
             icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg",
@@ -215,9 +201,7 @@ export const techStack: TechStackItem[][] = [
             icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-original.svg",
             url: "https://adobe.com/products/photoshop"
         },
-    ],
-    // Row 6 - 2 items (tip of pyramid)
-    [
+
         {
             name: "Hugging Face",
             icon: "https://huggingface.co/front/assets/huggingface_logo-noborder.svg",
@@ -228,5 +212,4 @@ export const techStack: TechStackItem[][] = [
             icon: "https://img.icons8.com/color/48/microsoft-office-2019.png",
             url: "https://www.microsoft.com/microsoft-365"
         },
-    ],
 ];
